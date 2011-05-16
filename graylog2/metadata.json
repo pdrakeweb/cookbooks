@@ -1,0 +1,39 @@
+{
+  "version": "0.0.1",
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "license": "Apache 2.0",
+  "providing": {
+  },
+  "dependencies": {
+    "apt": [
+
+    ],
+    "apache2": [
+
+    ]
+  },
+  "maintainer": "Peter J. Drake",
+  "replacing": {
+  },
+  "description": "Installs and configures Graylog2",
+  "maintainer_email": "pdrake@allplayers.com",
+  "groupings": {
+  },
+  "recommendations": {
+  },
+  "name": "graylog2",
+  "recipes": {
+    "graylog2": "Installs and configures Graylog2"
+  },
+  "suggestions": {
+  },
+  "platforms": {
+    "ubuntu": [
+
+    ]
+  },
+  "long_description": ""
+}
