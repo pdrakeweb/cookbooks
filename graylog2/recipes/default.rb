@@ -33,15 +33,15 @@ end
 
 # Add mongodb repository to apt
 apt_repository "mongoDB" do
-  uri "http://downloads.mongodb.org/distros/ubuntu"
-  distribution "10.4"
+  uri "http://downloads-distro.mongodb.org/repo/ubuntu-upstart"
+  distribution "dist"
   components ["10gen"]
   action :add
   notifies :run, resources(:execute => "add 10gen apt key"), :immediately
 end
 
 # Install required apt packages
-%w{ openjdk-6-jre mongodb-stable }.each do |pkg|
+%w{ openjdk-6-jre mongodb-10gen }.each do |pkg|
   package pkg do
     action :install
   end
